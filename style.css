@@ -1,0 +1,930 @@
+/* ====================================== */
+/* BODY */
+/* ====================================== */
+
+body {
+    background: linear-gradient(
+        -45deg,
+        #240046,
+        #3c096c,
+        #5a189a,
+        #502ab2
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+/* ====================================== */
+/* h1 texts*/
+/* ====================================== */
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow:
+        0 0 5px rgba(255,255,255,0.7);
+    animation: none;
+}
+
+
+/* ====================================== */
+/* THE CONTENT BOX*/
+/* ====================================== */
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    border-radius: 30px;
+
+    animation: pageFade 1s ease;
+}
+
+.container > p {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.container {
+    animation: pageFade 5s ease;
+}
+
+/* ====================================== */
+/* BUTTONS */
+/* ====================================== */
+
+button {
+    background: rgba(255, 255, 255, 0.9);
+    color: #5a0dad;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+button:hover {
+    background-color: #f3c4ff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+
+/* ====================================== */
+/* MESSAGES */
+/* ====================================== */
+
+/* ====================================== */
+/* MESSAGES */
+/* ====================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.show {
+    animation: fadeIn 1s ease;
+}
+
+#message1,
+#message2,
+#message3 {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+
+#letterMessage{
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    line-height: 2.15;
+    color: #2f2722;
+    white-space: pre-line;
+    letter-spacing: 0.3px;
+}
+
+#finalMessage {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.45rem;
+    line-height: 2.1;
+    color: white;
+    text-align: left;
+    white-space: pre-line;
+    letter-spacing: 0;
+    margin: 25px 0;
+    font-weight: 400;
+}
+
+/* ====================================== */
+/* HEARTS */
+/* ====================================== */
+
+.heart {
+    position: fixed;
+    pointer-events: none;
+}
+
+/* ====================================== */
+/* ANIMATIONS */
+/* ====================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+@keyframes floatUp {
+
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(-20px, -80px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translate(20px, -160px) rotate(10deg);
+    }
+
+    75% {
+        transform: translate(-15px, -240px) rotate(-8deg);
+    }
+
+    100% {
+        transform: translate(15px, -320px) rotate(8deg);
+        opacity: 0;
+    }
+}
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes glow {
+
+    from {
+        text-shadow:
+            0 0 3px white,
+            0 0 6px #d8b4fe;
+    }
+
+    to {
+        text-shadow:
+            0 0 5px white,
+            0 0 10px #c084fc;
+    }
+
+}
+
+@keyframes pageFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+}
+
+/* ====================================== */
+/* SUBTITLES */
+/* ====================================== */
+
+.subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* ====================================== */
+/* PAGE 2 - LOVE SECTION */
+/* ====================================== */
+
+/* ====================================== */
+/* CHAPTER ONE - REAL PAPER LETTER */
+/* ====================================== */
+
+.letter-body {
+    background: #e9e2d0;
+    margin: 0;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.letter-page {
+    position: relative;
+    width: 100%;
+    max-width: 760px;
+    background: #fffdf8;
+    padding: 50px 35px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+
+background-image:
+    linear-gradient(to bottom,
+        rgba(90, 24, 154, 0.12) 1px,
+        transparent 1px);
+
+background-size: 100% 40px;
+
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.letter-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 2px;
+    height: 100%;
+    background: rgba(123,44,191,0.15);
+}
+
+.bookmark {
+    position: absolute;
+    top: -2px;
+    right: 28px;
+    width: 24px;
+    height: 85px;
+    background: #7b2cbf;
+    border-radius: 0 0 12px 12px;
+}
+
+.betty-photo {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto 25px;
+    border: 5px solid #eadcff;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.letter-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+    color: #5a189a;
+    text-align: center;
+    margin: 0;
+    text-shadow: none;
+}
+
+.letter-page .subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-style: italic;
+    margin: 10px 0 30px;
+}
+
+.letter-content {
+    margin-top: 15px;
+}
+
+#letterMessage {
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    line-height: 2.15;
+    color: #2f2722;
+    white-space: pre-line;
+    letter-spacing: 0.3px;
+}
+
+.letter-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 16px 32px;
+}
+
+@media (max-width: 600px) {
+
+    .letter-page {
+        padding: 30px 20px;
+    }
+
+    .letter-title {
+        font-size: 2.4rem;
+    }
+
+    #letterMessage {
+        font-size: 1.55rem;
+        line-height: 2;
+    }
+
+    .betty-photo {
+        width: 85px;
+        height: 85px;
+    }
+
+}
+
+.signature-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: white !important;
+    margin: 0;
+}
+
+.signature-name .signature-heart {
+    color: #9d4dff;
+}
+
+
+/* ====================================== */
+/* PAGE TURN ANIMATION */
+/* ====================================== */
+
+/* ====================================== */
+/* PAGE TURN ANIMATION */
+/* ====================================== */
+
+/* ====================================== */
+/* REAL BOOK PAGE TURN */
+/* ====================================== */
+
+/* ====================================== */
+/* REAL BOOK PAGE TURN (RIGHT TO LEFT) */
+/* ====================================== */
+
+.page-turn {
+    animation: bookPageTurn 1s ease-in-out forwards;
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+@keyframes bookPageTurn {
+    0% {
+        transform: perspective(1800px) rotateY(0deg);
+        opacity: 1;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    }
+
+    20% {
+        transform: perspective(1800px) rotateY(12deg);
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.22);
+    }
+
+    45% {
+        transform: perspective(1800px) rotateY(35deg);
+        box-shadow: 25px 15px 35px rgba(0,0,0,0.26);
+    }
+
+    70% {
+        transform: perspective(1800px) rotateY(70deg);
+        opacity: 0.9;
+        box-shadow: 40px 20px 40px rgba(0,0,0,0.32);
+    }
+
+    100% {
+        transform: perspective(1800px) rotateY(100deg);
+        opacity: 0;
+        box-shadow: 60px 25px 45px rgba(0,0,0,0.36);
+    }
+}
+
+
+/* ====================================== */
+/* CHAPTER TWO - MEMORIES */
+/* ====================================== */
+
+.memories-body {
+    background: #efe7d8;
+    margin: 0;
+    padding: 20px 15px 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.memories-page {
+    max-width: 650px;
+    margin: auto;
+}
+
+.chapter-label {
+    text-align: center;
+    color: #7b2cbf;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.memories-title {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.8rem;
+    color: #5a189a;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+.memory-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.memory-card {
+    background: #fffdf8;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.memory-card img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.memory-caption {
+    font-family: "Caveat", cursive;
+    font-size: 1.6rem;
+    color: #4b3b35;
+    text-align: center;
+    margin: 18px 10px 10px;
+}
+
+@media (max-width: 600px) {
+
+    .memories-title {
+        font-size: 2.3rem;
+    }
+
+    .memory-caption {
+        font-size: 1.5rem;
+    }
+
+}
+
+/* ====================================== */
+/* FEATURED PHOTO */
+/* ====================================== */
+
+.featured-photo {
+    transform: scale(1.03);
+}
+
+
+/* ====================================== */
+/* BEAUTIFUL GIRL PHOTO ALBUM */
+/* ====================================== */
+
+.memory-card {
+    background: #fffdf8;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.memory-card:hover {
+    transform: translateY(-8px);
+}
+
+.memory-card img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+
+.memory-caption {
+    font-family: "Caveat", cursive;
+    font-size: 1.7rem;
+    color: #4b3b35;
+    text-align: center;
+    margin-top: 18px;
+}
+
+
+/* First special photo */
+
+.featured-photo {
+    transform: scale(1.03);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+
+/* ====================================== */
+/* PHOTO REVEAL ANIMATION */
+/* ====================================== */
+
+.memory-card {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: photoAppear 1s ease forwards;
+}
+
+
+.memory-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.memory-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.memory-card:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+
+@keyframes photoAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ====================================== */
+/* MOBILE SCRAPBOOK PHOTO EFFECT */
+/* ====================================== */
+
+.memory-card:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.memory-card:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.memory-card {
+    transition: transform 0.4s ease;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .memory-card {
+        padding: 10px;
+    }
+
+    .memory-card img {
+        max-height: 450px;
+        object-fit: cover;
+    }
+
+    .memory-caption {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* Chapter Two subtitle */
+
+.memories-page .subtitle {
+    color: #6b7280;
+}
+
+
+/* ====================================== */
+/* STORY SLIDESHOW */
+/* ====================================== */
+
+.story-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+}
+
+.story-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+}
+
+.story-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.story-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    display: block;
+}
+
+.story-slide p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-family: "Caveat", cursive;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    background: rgba(90, 24, 154, 0.45);
+    padding: 14px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+}
+
+.story-title {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.4rem;
+    color: #5a189a;
+    margin: 50px 0 25px;
+    text-shadow: none;
+}
+
+
+.fade-button {
+    animation: fadeInButton 2s ease forwards;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ====================================== */
+/* FINAL LETTER ENDING */
+/* ====================================== */
+
+.letter-ending {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.signature-block {
+    flex: 1;
+}
+
+.flower-photo {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eadcff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+
+    .flower-photo {
+        width: 75px;
+        height: 75px;
+    }
+
+.letter-ending {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+
+/* ====================================== */
+/* FINAL SIGNATURE HEART */
+/* ====================================== */
+
+.signature-heart {
+    display: inline-block;
+    animation: heartPulse 2s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.18);
+        opacity: 1;
+    }
+}
+
+/* ====================================== */
+/* FINAL PAGE - MATCH REFERENCE */
+/* ====================================== */
+
+.final-container {
+    width: 90%;
+    max-width: 880px;
+    margin: 30px auto;
+    padding: 36px 34px 26px;
+    background: rgba(45, 7, 77, 0.88);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.28);
+    text-align: left;
+}
+
+/* Override the global h1 */
+.final-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px !important;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 0 12px;
+    text-shadow: none !important;
+    animation: none !important;
+}
+
+.final-container .subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: rgba(255,255,255,0.72);
+    text-align: center;
+    margin: 0 0 28px;
+}
+
+.final-container .betty-photo {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.75);
+    display: block;
+    margin: 0 0 28px;
+}
+
+.final-message-wrapper {
+    text-align: left;
+}
+
+#finalMessage {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.95;
+    color: white;
+    white-space: pre-line;
+    text-align: left;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.letter-ending {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 36px;
+}
+
+.signature-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.signature-heart {
+    color: #9d4dff;
+}
+
+.flower-photo {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.75);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+}
+
+.final-divider {
+    border: 0;
+    border-top: 1px solid rgba(190,140,255,0.35);
+    margin: 24px 0 18px;
+}
+
+.final-ending {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: rgba(255,255,255,0.72);
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+
+    .final-container {
+        width: 92%;
+        padding: 28px 22px;
+        border-radius: 24px;
+    }
+
+    .final-container h1 {
+        font-size: 18px !important;
+    }
+
+    #finalMessage {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .flower-photo {
+        width: 56px;
+        height: 56px;
+    }
+
+}

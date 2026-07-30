@@ -30,12 +30,15 @@ window.addEventListener("load", startMusic);
 
 function unlockMusic() {
     startMusic();
+
     document.removeEventListener("click", unlockMusic);
     document.removeEventListener("touchstart", unlockMusic);
+    document.removeEventListener("scroll", unlockMusic);
 }
 
 document.addEventListener("click", unlockMusic);
 document.addEventListener("touchstart", unlockMusic);
+document.addEventListener("scroll", unlockMusic, { once: true });
 
 // Messages
 

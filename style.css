@@ -949,7 +949,9 @@ background-size: 100% 40px;
 
 }
 
-
+nav.book-nav {
+    background: lime !important;
+}
 
 nav.book-nav {
     position: fixed;

@@ -753,7 +753,7 @@ background-size: 100% 40px;
     flex: 1;
 }
 
-.flower-photo {
+.memory-photo {
     width: 95px;
     height: 95px;
     object-fit: cover;
@@ -882,7 +882,7 @@ background-size: 100% 40px;
     color: #9d4dff;
 }
 
-.flower-photo {
+.memory-photo {
     width: 64px;
     height: 64px;
     object-fit: cover;
@@ -922,7 +922,7 @@ background-size: 100% 40px;
         line-height: 1.85;
     }
 
-    .flower-photo {
+    .memory-photo {
         width: 56px;
         height: 56px;
     }

@@ -419,7 +419,7 @@ if (slides.length > 0 && finalButton && replayButton) {
     }
 
     // Start automatically after 25 seconds
-    setTimeout(startSlideshow, 25000);
+    setTimeout(startSlideshow, 38000);
 
     // Replay button
     replayButton.addEventListener("click", startSlideshow);

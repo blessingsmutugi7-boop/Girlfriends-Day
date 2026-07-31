@@ -320,8 +320,8 @@ background-size: 100% 40px;
 }
 
 .betty-photo {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
